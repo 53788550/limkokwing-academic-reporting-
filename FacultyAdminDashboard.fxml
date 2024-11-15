@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.limkokwingacademicreporting.FacultyAdminDashboardController">
+    <top>
+        <VBox alignment="CENTER" spacing="10" style="-fx-background-color: #3a3a3a;">
+            <Label text="Faculty Admin Dashboard" style="-fx-font-size: 26px; -fx-text-fill: white; -fx-padding: 15px;"/>
+            <Label text="Manage lecturers, academic years, semesters, modules, and roles" style="-fx-font-size: 14px; -fx-text-fill: lightgray;"/>
+        </VBox>
+    </top>
+
+    <center>
+        <!-- Explicit Insets defined for padding -->
+        <VBox alignment="CENTER" spacing="20" style="-fx-padding: 20;">
+            <HBox alignment="CENTER" spacing="20">
+                <VBox alignment="CENTER" spacing="10" style="-fx-background-color: #2e2e2e; -fx-padding: 15px; -fx-border-radius: 10; -fx-background-radius: 10;">
+                    <Label text="View Profile" style="-fx-font-size: 18px; -fx-text-fill: #ffffff;"/>
+                    <Button fx:id="viewProfileButton" text="View Profile" style="-fx-font-size: 14px;" onAction="#handleViewProfile"/>
+                </VBox>
+
+                <VBox alignment="CENTER" spacing="10" style="-fx-background-color: #2e2e2e; -fx-padding: 15px; -fx-border-radius: 10; -fx-background-radius: 10;">
+                    <Label text="Add New Lecturer" style="-fx-font-size: 18px; -fx-text-fill: #ffffff;"/>
+                    <Button fx:id="addLecturerButton" text="Add Lecturer" style="-fx-font-size: 14px;" onAction="#handleAddLecturer"/>
+
+
+                </VBox>
+
+                <VBox alignment="CENTER" spacing="10" style="-fx-background-color: #2e2e2e; -fx-padding: 15px; -fx-border-radius: 10; -fx-background-radius: 10;">
+                    <Label text="Add Academic Year" style="-fx-font-size: 18px; -fx-text-fill: #ffffff;"/>
+                    <Button fx:id="addAcademicYearButton" text="Add Academic Year" style="-fx-font-size: 14px;" onAction="#handleAddAcademicYear"/> <!-- Added onAction -->
+                </VBox>
+            </HBox>
+
+            <HBox alignment="CENTER" spacing="20">
+                <VBox alignment="CENTER" spacing="10" style="-fx-background-color: #2e2e2e; -fx-padding: 15px; -fx-border-radius: 10; -fx-background-radius: 10;">
+                    <Label text="Add Semester &amp; Module" style="-fx-font-size: 18px; -fx-text-fill: #ffffff;"/>
+                    <Button fx:id="addSemesterButton" text="Add Semester" style="-fx-font-size: 14px;"/>
+                    <Button fx:id="addModuleButton" text="Add Module" onAction="#handleAddModule" />
+
+                </VBox>
+
+                <VBox alignment="CENTER" spacing="10" style="-fx-background-color: #2e2e2e; -fx-padding: 15px; -fx-border-radius: 10; -fx-background-radius: 10;">
+                    <Label text="Assign Lecturers" style="-fx-font-size: 18px; -fx-text-fill: #ffffff;"/>
+                    <Button fx:id="assignRolesButton" text="Assign Roles/Modules" style="-fx-font-size: 14px;" onAction="#handleAssignRoles"/>
+
+                </VBox>
+
+                <VBox alignment="CENTER" spacing="10" style="-fx-background-color: #2e2e2e; -fx-padding: 15px; -fx-border-radius: 10; -fx-background-radius: 10;">
+                    <Label text="View Assignments" style="-fx-font-size: 18px; -fx-text-fill: #ffffff;"/>
+                    <Button fx:id="viewAssignmentsButton" text="View Lecturers &amp; Modules" style="-fx-font-size: 14px;" onAction="#handleViewAssignments"/>
+
+                </VBox>
+            </HBox>
+        </VBox>
+    </center>
+
+    <bottom>
+        <VBox alignment="CENTER" spacing="10" style ="-fx-background-color: #3a3a3a; -fx-padding: 10px;">
+            <Button fx:id="logoutButton" text="Log Out" style="-fx-font-size: 14px;" onAction="#handleLogout"/>
+        </VBox>
+    </bottom>
+</BorderPane>

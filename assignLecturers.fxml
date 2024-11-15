@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.limkokwingacademicreporting.AssignLecturersController">
+    <center>
+        <VBox spacing="20" style="-fx-padding: 20; -fx-background-color: #101820;">
+            <Label text="Personal Info" style="-fx-font-weight: bold; -fx-text-fill: #F2AA4C;"/>
+
+            <Label text="First Name" style="-fx-text-fill: #FFFFFF;"/>
+            <TextField fx:id="firstNameField" promptText="Enter First Name" style="-fx-background-color: #1C1B1B; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #B2B2B2;"/>
+
+            <Label text="Last Name" style="-fx-text-fill: #FFFFFF;"/>
+            <TextField fx:id="lastNameField" promptText="Enter Last Name" style="-fx-background-color: #1C1B1B; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #B2B2B2;"/>
+
+            <Label text="E-mail" style="-fx-text-fill: #FFFFFF;"/>
+            <TextField fx:id="emailField" promptText="Enter Email" style="-fx-background-color: #1C1B1B; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #B2B2B2;"/>
+
+            <Label text="Roles" style="-fx-font-weight: bold; -fx-text-fill: #F2AA4C;"/>
+            <CheckBox fx:id="principalLecturerCheck" text="Principal Lecturer" style="-fx-text-fill: #FFFFFF;"/>
+            <CheckBox fx:id="yearLeaderCheck" text="Year Leader" style="-fx-text-fill: #FFFFFF;"/>
+            <CheckBox fx:id="tutorCheck" text="Tutor" style="-fx-text-fill: #FFFFFF;"/>
+            <CheckBox fx:id="lecturerCheck" text="Lecturer" style="-fx-text-fill: #FFFFFF;"/>
+
+            <Label text="Modules Assigned" style="-fx-font-weight: bold; -fx-text-fill: #F2AA4C;"/>
+            <HBox spacing="10">
+                <RadioButton fx:id="discreteMaths" text="Discrete Maths (BIDM3110)" style="-fx-text-fill: #FFFFFF;"/>
+                <RadioButton fx:id="cppProgramming" text="C++ Programming I" style="-fx-text-fill: #FFFFFF;"/>
+                <RadioButton fx:id="profComm" text="Professional Communication" style="-fx-text-fill: #FFFFFF;"/>
+                <RadioButton fx:id="publicRelations" text="Public Relations" style="-fx-text-fill: #FFFFFF;"/>
+                <RadioButton fx:id="javaProgramming" text="Java Programming II" style="-fx-text-fill: #FFFFFF;"/>
+            </HBox>
+
+            <Label text="Classes Assigned" style="-fx-font-weight: bold; -fx-text-fill: #F2AA4C;"/>
+            <HBox spacing="10">
+                <RadioButton fx:id="bscsMy3S1" text="BSCSMY3S1" style="-fx-text-fill: #FFFFFF;"/>
+                <RadioButton fx:id="bscBitY3S1" text="BSCBITY3S1" style="-fx-text-fill: #FFFFFF;"/>
+                <RadioButton fx:id="bmy3S1" text="BMY3S1" style="-fx-text-fill: #FFFFFF;"/>
+                <RadioButton fx:id="dfpy1S1" text="DFPY1S1" style="-fx-text-fill: #FFFFFF;"/>
+                <RadioButton fx:id="dfpy2S1" text="DFPY2S1" style="-fx-text-fill: #FFFFFF;"/>
+            </HBox>
+            <Button text="Save" fx:id="saveButton" onAction="#handleSave" style="-fx-background-color: #F2AA4C; -fx-text-fill: #101820; -fx-border-radius: 5; -fx-font-size: 14px;"/>
+            <Button text="Cancel" onAction="#handleCancel" style="-fx-background-color: #F2AA4C; -fx-text-fill: #101820; -fx-border-radius: 5; -fx-font-size: 14px;"/>
+        </VBox>
+    </center>
+</BorderPane>

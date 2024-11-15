@@ -1,0 +1,24 @@
+Timestamp: 2024-11-14 05:27:38 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-14 05:33:51 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-14 15:32:31 | Email: motjoka@gmail.com | Success: false
+Timestamp: 2024-11-14 15:32:40 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-14 16:15:27 | Email: motjoka@gmail.com | Success: false
+Timestamp: 2024-11-14 16:15:50 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-14 16:17:04 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-14 16:18:15 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-14 16:24:01 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-14 16:32:21 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-14 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-14 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-14 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-14 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-14 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-15 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-15 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-15 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-15 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-15 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-15 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-15 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-15 | Email: motjoka@gmail.com | Success: true
+Timestamp: 2024-11-15 | Email: motjoka@gmail.com | Success: true

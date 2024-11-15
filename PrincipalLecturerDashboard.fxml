@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.limkokwingacademicreporting.PrincipalLecturerDashboardController"
+      style="-fx-background-color: black; -fx-padding: 20px; -fx-alignment: center;">
+
+    <!-- Module Assignment Section -->
+    <VBox spacing="10" style="-fx-alignment: center;">
+
+        <!-- ComboBox for module selection with Limkokwing style -->
+        <ComboBox fx:id="moduleComboBox" promptText="Select Module"
+                  style="-fx-background-color: #333333; -fx-text-fill: white; -fx-prompt-text-fill: #7f7f7f;" />
+
+        <!-- TextField for class entry with Limkokwing style -->
+        <TextField fx:id="classField" promptText="Enter Class"
+                   style="-fx-background-color: #333333; -fx-text-fill: white; -fx-prompt-text-fill: #7f7f7f;" />
+
+        <!-- TextField for module name with Limkokwing style -->
+        <TextField fx:id="moduleField" promptText="Enter Module Name"
+                   style="-fx-background-color: #333333; -fx-text-fill: white; -fx-prompt-text-fill: #7f7f7f;" />
+
+        <!-- TextField for challenges with Limkokwing style -->
+        <TextField fx:id="challengesField" promptText="Enter Challenges"
+                   style="-fx-background-color: #333333; -fx-text-fill: white; -fx-prompt-text-fill: #7f7f7f;" />
+
+        <!-- TextField for recommendations with Limkokwing style -->
+        <TextField fx:id="recommendationsField" promptText="Enter Recommendations"
+                   style="-fx-background-color: #333333; -fx-text-fill: white; -fx-prompt-text-fill: #7f7f7f;" />
+
+        <!-- DatePicker for report date with Limkokwing style -->
+        <DatePicker fx:id="reportDate"
+                    style="-fx-background-color: #333333; -fx-text-fill: white;" />
+
+        <!-- Submit button with Limkokwing theme colors -->
+        <Button fx:id="submitReportBtn" text="Submit Report"
+                style="-fx-background-color: #007ac1; -fx-text-fill: white;" />
+
+        <!-- View past reports button with Limkokwing theme colors -->
+        <Button fx:id="viewReportsBtn" text="View Past Reports"
+                style="-fx-background-color: #007ac1; -fx-text-fill: white;" />
+
+        <!-- Back button to navigate back to the login screen -->
+        <Button fx:id="backButton" text="Back to Login"
+                style="-fx-background-color: #007ac1; -fx-text-fill: white;" onAction="#goBackToLogin"/>
+    </VBox>
+</VBox>

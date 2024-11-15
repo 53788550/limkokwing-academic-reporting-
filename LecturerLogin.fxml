@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.limkokwingacademicreporting.LecturerController">
+
+    <!-- Top section with a title -->
+    <top>
+        <VBox alignment="CENTER" spacing="10" style="-fx-background-color: #000000; -fx-padding: 15px;">
+            <Label text="Lecturer Login" style="-fx-font-size: 24px; -fx-text-fill: #FFFFFF; -fx-font-weight: bold;"/>
+        </VBox>
+    </top>
+
+    <center>
+        <!-- Center section with background image and login form -->
+        <StackPane>
+            <!-- Background image with reduced opacity -->
+            <ImageView fx:id="backgroundImageView" fitWidth="800" fitHeight="600" preserveRatio="true" opacity="0.4"/>
+
+            <!-- Login form with black background and white text for Limkokwing style -->
+            <VBox alignment="CENTER" spacing="20" style="-fx-background-radius: 15px; -fx-padding: 20; -fx-background-color: rgba(0, 0, 0, 0.8);">
+
+                <!-- Email input section -->
+                <VBox alignment="CENTER_LEFT" spacing="10" style="-fx-padding: 15px;">
+                    <Label text="Email/Phone" style="-fx-font-size: 18px; -fx-text-fill: #FFFFFF;"/>
+                    <TextField fx:id="emailField" promptText="Enter your email/phone" style="-fx-font-size: 14px; -fx-background-color: #FFFFFF; -fx-text-fill: #000000; -fx-border-radius: 10;"/>
+                </VBox>
+
+                <!-- Password input section -->
+                <VBox alignment="CENTER_LEFT" spacing="10" style="-fx-padding: 15px;">
+                    <Label text="Password" style="-fx-font-size: 18px; -fx-text-fill: #FFFFFF;"/>
+                    <PasswordField fx:id="passwordField" promptText="Enter your password" style="-fx-font-size: 14px; -fx-background-color: #FFFFFF; -fx-text-fill: #000000; -fx-border-radius: 10;"/>
+                </VBox>
+
+                <!-- Buttons section for login and register -->
+                <HBox alignment="CENTER" spacing="20" style="-fx-padding: 15px;">
+                    <Button text="Login" style="-fx-font-size: 14px; -fx-background-color: #000000; -fx-text-fill: #FFFFFF; -fx-background-radius: 10; -fx-padding: 10px;" onAction="#handleLogin"/>
+                    <Button text="Register" style="-fx-font-size: 14px; -fx-background-color: #FFFFFF; -fx-text-fill: #000000; -fx-background-radius: 10; -fx-padding: 10px;" onAction="#handleRegister"/>
+                </HBox>
+
+            </VBox>
+        </StackPane>
+    </center>
+
+    <!-- Bottom section with 'Back to Main' button -->
+    <bottom>
+        <VBox alignment="CENTER" spacing="10" style="-fx-background-color: #000000; -fx-padding: 10px;">
+            <Button text="Back to Main" style="-fx-font-size: 14px; -fx-background-color: #000000; -fx-text-fill: #FFFFFF; -fx-background-radius: 10; -fx-padding: 10px;" onAction="#handleBackToLogin"/>
+        </VBox>
+    </bottom>
+
+</BorderPane>

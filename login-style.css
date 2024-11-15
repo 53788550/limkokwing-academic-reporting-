@@ -1,0 +1,33 @@
+/* Style for the main login container */
+.login-container {
+    -fx-background-color: #000000;
+    -fx-padding: 50;
+    -fx-spacing: 20;
+    -fx-alignment: center;
+}
+
+/* Style for each button */
+.login-button {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-font-size: 16px;
+    -fx-font-family: 'Arial';
+    -fx-padding: 10 20 10 20;
+    -fx-pref-width: 250;
+    -fx-border-color: #000000;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+}
+
+.login-button:hover {
+    -fx-background-color: Black;
+    -fx-text-fill: #333333;
+}
+
+/* Style for the title label */
+.label {
+    -fx-text-fill: white;
+    -fx-font-size: 28px;
+    -fx-font-family: 'Arial Black';
+    -fx-padding: 10;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.limkokwingacademicreporting.AddSemesterAndModuleController" prefWidth="600" prefHeight="400">
+    <TableView fx:id="moduleTable" layoutX="50" layoutY="50" prefWidth="500" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="codeColumn" text="Module Code" prefWidth="100"/>
+            <TableColumn fx:id="nameColumn" text="Module Name" prefWidth="200"/>
+            <TableColumn fx:id="semesterColumn" text="Semester" prefWidth="80"/>
+            <TableColumn fx:id="occColumn" text="Occ" prefWidth="50"/>
+            <TableColumn fx:id="deleteColumn" text="Delete" prefWidth="50"/>
+            <TableColumn fx:id="confirmColumn" text="Confirm" prefWidth="50"/>
+        </columns>
+    </TableView>
+
+    <!-- Cancel Button -->
+    <Button text="Cancel" layoutX="50" layoutY="370" onAction="#handleCancel"/>
+</AnchorPane>

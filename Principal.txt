@@ -1,0 +1,16 @@
+Timestamp: 2024-11-14 04:33:45 | Email: leratomoshoeshoe@gmail.com | Success: true
+Timestamp: 2024-11-15 01:35:11 | Email:  | Success: false
+Timestamp: 2024-11-15 07:39:06 | Email: leratomoshoeshoe@gmail.com | Success: false
+Timestamp: 2024-11-15 07:40:09 | Email: leratomoshoeshoe@gmail.com | Success: true
+Timestamp: 2024-11-15 09:09:54 | Email: leratomoshoeshoe@gmail.com | Success: true
+Timestamp: 2024-11-15 09:14:46 | Email: leratomoshoeshoe@gmail.com | Success: true
+Timestamp: 2024-11-15 09:27:45 | Email: leratomoshoeshoe@gmail.com | Success: true
+Timestamp: 2024-11-15 09:31:55 | Email: leratomoshoeshoe@gmail.com | Success: true
+Timestamp: 2024-11-15 09:33:14 | Email: leratomoshoeshoe@gmai.com | Success: false
+Timestamp: 2024-11-15 09:33:24 | Email: leratomoshoeshoe@gmail.com | Success: true
+Timestamp: 2024-11-15 09:41:11 | Email: leratomoshoeshoe@gmail.com | Success: true
+Timestamp: 2024-11-15 09:46:31 | Email: leratomoshoeshoe@gmail.com | Success: true
+Timestamp: 2024-11-15 09:54:01 | Email: leratomoshoeshoe@gmail.com | Success: true
+Timestamp: 2024-11-15 10:02:46 | Email: leratomoshoeshoe@gmail.com | Success: true
+Timestamp: 2024-11-15 10:40:55 | Email: leratomoshoeshoe@gmail.com | Success: true
+Timestamp: 2024-11-15 10:47:42 | Email: leratomoshoeshoe@gmail.com | Success: true

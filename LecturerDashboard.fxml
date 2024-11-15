@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.limkokwingacademicreporting.LecturerDashboardController">
+
+    <!-- Header with black background -->
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="20" style="-fx-background-color: #000000; -fx-padding: 10px;">
+            <Label text="Limkokwing Academic Reporting - Lecturer Dashboard"
+                   style="-fx-text-fill: #ffffff; -fx-font-size: 18px; -fx-font-weight: bold;" />
+        </HBox>
+    </top>
+
+    <!-- Center content -->
+    <center>
+        <VBox spacing="20" style="-fx-padding: 15px;">
+            <!-- Report Form -->
+            <HBox spacing="20" alignment="CENTER">
+                <!-- Module Selection -->
+                <VBox spacing="10">
+                    <Label text="Module" style="-fx-font-weight: bold; -fx-text-fill: #000000;" />
+                    <ComboBox fx:id="moduleComboBox" promptText="Select Module" />
+                </VBox>
+
+                <!-- Week Selection -->
+                <VBox spacing="10">
+                    <Label text="Week" style="-fx-font-weight: bold; -fx-text-fill: #000000;" />
+                    <ComboBox fx:id="weekComboBox" promptText="Select Week" />
+                </VBox>
+
+                <!-- Report Details -->
+                <VBox spacing="10">
+                    <Label text="Report Details" style="-fx-font-weight: bold; -fx-text-fill: #000000;" />
+                    <TextArea fx:id="reportDetailsField" promptText="Enter report details" prefRowCount="3" />
+                </VBox>
+
+                <Button text="Save Report" fx:id="saveReportButton" onAction="#handleSaveReport"
+                        style="-fx-background-color: #000000; -fx-text-fill: #ffffff; -fx-font-weight: bold;" />
+            </HBox>
+
+            <!-- Attendance Table -->
+            <TableView fx:id="attendanceTable" style="-fx-border-color: #000000; -fx-background-color: #f9f9f9;">
+                <columns>
+                    <!-- Student Name Column -->
+                    <TableColumn text="Student Name" fx:id="studentNameColumn" prefWidth="200" />
+                    <!-- Attendance Column -->
+                    <TableColumn text="Attendance" fx:id="attendanceColumn" prefWidth="120" />
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+
+    <!-- Footer -->
+    <bottom>
+        <HBox spacing="10" alignment="CENTER_RIGHT" style="-fx-background-color: #000000; -fx-padding: 10px;">
+            <Button text="Back" onAction="#handleBack"
+                    style="-fx-background-color: #000000; -fx-text-fill: #ffffff; -fx-font-weight: bold;" />
+        </HBox>
+    </bottom>
+</BorderPane>

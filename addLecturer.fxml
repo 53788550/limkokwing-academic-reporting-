@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/" fx:controller="com.example.limkokwingacademicreporting.AddLecturerController">
+    <VBox alignment="CENTER" spacing="20" style="-fx-padding: 20; -fx-background-color: #212f3d ;">
+
+        <!-- Header -->
+        <Text text="Add Lecturer" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #fdfefe ; -fx-margin-bottom: 20;"/>
+
+        <!-- Name Field -->
+        <VBox spacing="10" alignment="CENTER" style="-fx-padding: 10;">
+            <TextField fx:id="nameField" promptText="Lecturer Name" prefWidth="300" style="-fx-border-color: #0078D4; -fx-background-color: white; -fx-padding: 5;"/>
+        </VBox>
+
+        <!-- Faculty Dropdown -->
+        <VBox spacing="10" alignment="CENTER" style="-fx-padding: 10;">
+            <ComboBox fx:id="facultyComboBox" promptText="Select a Faculty" prefWidth="300" style="-fx-border-color: #0078D4; -fx-background-color: white;"/>
+        </VBox>
+
+        <!-- Course Dropdown -->
+        <VBox spacing="10" alignment="CENTER" style="-fx-padding: 10;">
+            <ComboBox fx:id="courseComboBox" promptText="Select a Course" prefWidth="300" style="-fx-border-color: #0078D4; -fx-background-color: white;"/>
+        </VBox>
+
+        <!-- Description Field -->
+        <VBox spacing="10" alignment="CENTER" style="-fx-padding: 10;">
+            <TextArea fx:id="descriptionField" promptText="Description" prefWidth="300" prefHeight="100" style="-fx-border-color: #0078D4; -fx-background-color: white;"/>
+        </VBox>
+
+        <!-- Submit Button -->
+        <VBox spacing="10" alignment="CENTER" style="-fx-padding: 10;">
+            <Button fx:id="submitButton" text="Submit" style="-fx-background-color: #0078D4; -fx-text-fill: white; -fx-padding: 10 20; -fx-font-size: 14px;" onAction="#handleSubmitButtonAction"/>
+        </VBox>
+
+        <!-- Cancel Button -->
+        <VBox spacing="10" alignment="CENTER" style="-fx-padding: 10;">
+            <Button fx:id="cancelButton" text="Cancel" style="-fx-background-color: #d9534f; -fx-text-fill: white; -fx-padding: 10 20; -fx-font-size: 14px;" onAction="#handleCancelButtonAction"/>
+        </VBox>
+
+    </VBox>
+</AnchorPane>

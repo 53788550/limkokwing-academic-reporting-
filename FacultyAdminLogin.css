@@ -1,0 +1,82 @@
+/* General styles */
+body {
+    background-color: #f2f2f2; /* Light gray background */
+    font-family: Arial, sans-serif; /* Clean and modern font */
+}
+
+/* Main container */
+.login-container {
+    width: 400px; /* Fixed width for the login box */
+    margin: auto; /* Centering the container */
+    background-color: #ffffff; /* White background for the login box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding for inner content */
+}
+
+/* Header styles */
+.login-header {
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.login-header h1 {
+    color: #f6eb61; /* Limkokwing yellow */
+    font-size: 24px; /* Font size for the header */
+    margin: 0; /* Remove default margin */
+}
+
+/* Input fields */
+.input-field {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for inputs */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+
+/* Input field focus */
+.input-field:focus {
+    border-color: #f6eb61; /* Yellow border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styles */
+.login-button {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for button */
+    background-color: #f6eb61; /* Limkokwing yellow */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Button hover effect */
+.login-button:hover {
+    background-color: #d4c63c; /* Darker shade of yellow on hover */
+}
+
+/* Alert styles */
+.alert {
+    color: red; /* Red color for alerts */
+    text-align: center; /* Center the alert text */
+    margin-top: 10px; /* Space above the alert */
+}
+
+/* Footer styles */
+.footer {
+    text-align: center; /* Center the footer */
+    margin-top: 20px; /* Space above footer */
+}
+
+.footer a {
+    color: #000; /* Black link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.limkokwingacademicreporting.FacultyAdminController">
+    <top>
+        <VBox alignment="CENTER" spacing="10" style="-fx-background-color: rgba(0, 0, 0, 0.5); -fx-padding: 15px;">
+            <Label text="Faculty Admin Login" style="-fx-font-size: 24px; -fx-text-fill: white; -fx-font-weight: bold;"/>
+        </VBox>
+    </top>
+
+    <center>
+        <StackPane>
+            <ImageView fx:id="backgroundImageView" fitWidth="800" fitHeight="600" preserveRatio="true" opacity="0.4"/>
+            <VBox alignment="CENTER" spacing="20" style="-fx-background-radius: 15px; -fx-padding: 20; -fx-opacity: 1;">
+                <VBox alignment="CENTER" spacing="10" style="-fx-padding: 15px; -fx-background-color: black; -fx-border-radius: 10; -fx-background-radius: 10;">
+                    <Label text="Email" style="-fx-font-size: 18px; -fx-text-fill: white;"/>
+                    <TextField fx:id="emailField" promptText="Enter your email" style="-fx-font-size: 14px; -fx-background-color: #f3f4f6; -fx-border-radius: 10;"/>
+                </VBox>
+
+                <VBox alignment="CENTER" spacing="10" style="-fx-padding: 15px; -fx-background-color: black; -fx-border-radius: 10; -fx-background-radius: 10;">
+                    <Label text="Password" style="-fx-font-size: 18px; -fx-text-fill: white;"/>
+                    <PasswordField fx:id="passwordField" promptText="Enter your password" style="-fx-font-size: 14px; -fx-background-color: #f3f4f6; -fx-border-radius: 10;"/>
+                </VBox>
+
+                <HBox alignment="CENTER" spacing="20">
+                    <VBox alignment="CENTER" spacing="10">
+                        <Button text="Login" style="-fx-font-size: 14px; -fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 10; -fx-padding: 10px;" onAction="#handleLogin"/>
+                    </VBox>
+
+                    <VBox alignment="CENTER" spacing="10">
+                        <Button text="Register" style="-fx-font-size: 14px; -fx-background-color: white; -fx-text-fill: black; -fx-background-radius: 10; -fx-padding: 10px;" onAction="#handleRegister"/>
+                    </VBox>
+                </HBox>
+            </VBox>
+        </StackPane>
+    </center>
+
+    <bottom>
+        <VBox alignment="CENTER" spacing="10" style="-fx-background-color: black; -fx-padding: 10px;">
+            <Button text="Back to Main Login" onAction="#handleBackToLogin" style="-fx-font-size: 14px; -fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 10; -fx-padding: 10px;"/>
+        </VBox>
+    </bottom>
+</BorderPane>

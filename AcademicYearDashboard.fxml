@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/" fx:controller="com.example.limkokwingacademicreporting.AcademicYearDashboardController" style="-fx-background-color: #000000;">
+    <VBox alignment="TOP_CENTER" spacing="20" style="-fx-padding: 20; -fx-background-color: #000000; -fx-border-color: #ffffff; -fx-border-width: 2px;">
+
+        <Label text="New Academic Year" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #ffffff;" />
+
+        <HBox spacing="15" alignment="CENTER" style="-fx-padding: 10;">
+            <Label text="Start Date*" style="-fx-text-fill: #ffffff;" />
+            <DatePicker fx:id="startDateField" style="-fx-background-color: #ffffff; -fx-text-fill: #000000;" />
+            <Label text="End Date*" style="-fx-text-fill: #ffffff;" />
+            <DatePicker fx:id="endDateField" style="-fx-background-color: #ffffff; -fx-text-fill: #000000;" />
+        </HBox>
+
+        <HBox spacing="15" alignment="CENTER" style="-fx-padding: 10;">
+            <Label text="Number of Terms*" style="-fx-text-fill: #ffffff;" />
+            <ComboBox fx:id="numTermsComboBox" promptText="Select Number of Terms" style="-fx-background-color: #ffffff; -fx-text-fill: #000000;" />
+        </HBox>
+
+        <TableView fx:id="termsTable" prefHeight="200" prefWidth="600" style="-fx-padding: 10; -fx-background-color: #ffffff;">
+            <columns>
+                <TableColumn fx:id="termColumn" text="Terms" />
+                <TableColumn fx:id="nameColumn" text="Name*" />
+                <TableColumn fx:id="termStartDateColumn" text="Start Date*" />
+                <TableColumn fx:id="termEndDateColumn" text="End Date*" />
+            </columns>
+        </TableView>
+
+        <HBox spacing="15" alignment="CENTER" style="-fx-padding: 10;">
+            <Label text="Period Structure" style="-fx-text-fill: #ffffff;" />
+            <ComboBox fx:id="periodStructureComboBox" promptText="Select Period Structure" style="-fx-background-color: #ffffff; -fx-text-fill: #000000;" />
+        </HBox>
+
+        <HBox spacing="15" alignment="CENTER" style="-fx-padding: 10;">
+            <Label text="Timetable Day for first week day of Term 1" style="-fx-text-fill: #ffffff;" />
+            <TextField fx:id="ttDayField" style="-fx-background-color: #ffffff; -fx-text-fill: #000000;" />
+        </HBox>
+
+        <HBox spacing="15" alignment="CENTER" style="-fx-padding: 10;">
+            <Button text="Create" onAction="#handleCreate" style="-fx-background-color: #0070c0; -fx-text-fill: #ffffff; -fx-font-weight: bold;" />
+            <Button text="Cancel" onAction="#handleCancel" style="-fx-background-color: #d9534f; -fx-text-fill: #ffffff; -fx-font-weight: bold;" />
+        </HBox>
+    </VBox>
+</AnchorPane>
